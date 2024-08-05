@@ -1,0 +1,5 @@
+package com.javacourse.springbootdemo.apiDemo;
+
+public class ProductsController {
+
+}

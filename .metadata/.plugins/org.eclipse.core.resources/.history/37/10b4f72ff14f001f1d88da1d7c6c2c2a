@@ -1,0 +1,39 @@
+package com.javacourse.projects.hibernateAndJpa.DataAccess;
+
+import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import org.hibernate.Session;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+import com.javacourse.projects.hibernateAndJpa.Entities.City;
+
+@Repository
+public class HibernateCityDal implements ICityDal {
+
+    @PersistenceContext
+    private EntityManager entityManager;
+
+    @Override
+    @Transactional
+    public List<City> getAll() {
+        Session session = entityManager.unwrap(Session.class);
+        List<City> cities = session.createQuery("from City", City.class).getResultList();
+        return cities;
+    }
+
+    @Override
+    public void add(City city) {
+        // TODO Auto-generated method stub
+    }
+
+    @Override
+    public void update(City city) {
+        // TODO Auto-generated method stub
+    }
+
+    @Override
+    public void delete(City city) {
+        // TODO Auto-generated method stub
+    }
+}

@@ -1,0 +1,17 @@
+package com.turkishjavadeveloper.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+//Controller classları için Spring'in bize sunmuş olduğu, RestController anatasyonu eklenir.
+@RestController
+public class HelloController {
+	
+	//localhost:8080/hello		(path)
+	
+	@GetMapping(path = "/hello")
+	public String sayHello() {
+		return "Hello World!";
+	}
+	
+}

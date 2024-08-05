@@ -1,0 +1,5 @@
+package com.javacourse.projects.hibernateAndJpa.Entities;
+
+public class City {
+
+}

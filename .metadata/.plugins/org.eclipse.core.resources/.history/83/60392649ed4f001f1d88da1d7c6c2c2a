@@ -1,0 +1,5 @@
+package com.javacourse.projects.hibernateAndJpa.Business;
+
+public class CityManager {
+
+}

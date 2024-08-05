@@ -1,0 +1,5 @@
+package com.turkishjavadeveloper.model;
+
+public class User {
+
+}
