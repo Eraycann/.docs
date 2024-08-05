@@ -1,5 +1,7 @@
 package service;
 
-public interface UserService {
+import dto.User;
 
+public interface UserService {
+	User getUserById(Long userId);
 }
