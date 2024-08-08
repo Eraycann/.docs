@@ -1,5 +1,0 @@
-package com.javacourse.projects.hibernateAndJpa.restApi;
-
-public class CityController {
-
-}

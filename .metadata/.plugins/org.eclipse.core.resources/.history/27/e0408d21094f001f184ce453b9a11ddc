@@ -1,8 +1,0 @@
-package springIntro;
-
-public class CustomerDal {
-
-	public void Add() {
-		System.out.println("Oracle Veritabanına Eklendi.");
-	}
-}
